@@ -10,12 +10,12 @@ function calculate () {
   // input
   const length = parseInt(document.getElementById('length-of-pyramid').value)
   const width = parseInt(document.getElementById('width-of-pyramid').value)
-  const heigt = parseInt(document.getElementById('height-of-pyramid').value)
+  const height = parseInt(document.getElementById('height-of-pyramid').value)
 
   // process
   const volume = (length * width * height) / 3
 
 
   // output
-  document.getElementById('volume').innerHTML = 'Volume is: ' + volume + ' cm³'
+  document.getElementById('volume').innerHTML = 'Volume is: ' + volume.toFixed(2) + ' cm³'
 }
